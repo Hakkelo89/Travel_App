@@ -1,0 +1,145 @@
+:root {
+  --light-cornflower-blue: #8ecae6ff;
+  --blue-green: #219ebcff;
+  --prussian-blue: #023047ff;
+  --honey-yellow: #ffb703ff;
+  --orange: #fb8500ff;
+}
+
+main {
+  height: 87vh;
+  margin: 1%;
+}
+
+/* Navbar styling */
+
+#favouriteButton {
+  background-color: var(--orange);
+}
+
+.favouritesLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.travel-nav {
+  min-height: 10vh !important;
+  background-color: var(--prussian-blue) !important;
+  border: 0px !important;
+}
+
+.travel-logo {
+  min-width: 35% !important;
+}
+
+.travel-title {
+  color: var(--light-cornflower-blue);
+}
+
+/* Search container styling */
+
+.search-container {
+  background-color: unset;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  line-height: 70px;
+}
+
+#start-form {
+  margin-top: 10% !important;
+  background-color: white !important;
+  padding: 10% 15%;
+}
+
+.error::placeholder {
+  color: var(--orange) !important;
+}
+
+.random-form {
+  background-color: white !important;
+  padding: 0% 15% 10% 15%;
+}
+
+/* Results page styling for card elements */
+
+.card-header {
+  background-color: var(--prussian-blue) !important;
+}
+
+.card-title {
+  color: var(--light-cornflower-blue) !important;
+}
+
+/* Places card styling */
+.places-aside {
+  min-width: 30% !important;
+}
+
+.places-main {
+  min-width: 70% !important;
+}
+
+.places-card {
+  height: 100% !important;
+}
+
+#places-image-container {
+  height: 40vh !important;
+  width: 100% !important;
+}
+
+.place-image {
+  height: 100% !important;
+  width: 40vh !important;
+}
+
+#places-content {
+  line-height: 2rem;
+  background-color: rgba(199, 194, 194, 0.178);
+}
+
+.learn-btn {
+  margin-top: 2% !important;
+  margin-bottom: 2% !important;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  #start-form {
+    margin-top: 14% !important;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .search-container {
+    width: 70%;
+  }
+
+  #start-form {
+    margin-top: 16% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-container {
+    width: 100%;
+  }
+
+  #places-container {
+    flex-wrap: wrap !important;
+  }
+  .places-aside {
+    min-width: 100% !important;
+  }
+
+  .places-main {
+    min-width: 100% !important;
+  }
+  .health-currency-container {
+    flex-wrap: wrap-reverse !important;
+  }
+}
